@@ -51,12 +51,12 @@
         }
 }
 @media (max-width: 768px) {
-    .logo {
+    /* .logo {
         margin-right: 3vw;
-    }
-
-    /* .header__nav {
-            display: none;
     } */
+
+    .header__nav {
+            display: none;
+    }
 
 }
