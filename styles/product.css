@@ -1,0 +1,128 @@
+.product {
+    background-color: var(--co-white);
+    width: 100%;
+}
+.container-product {
+    padding: 150px 10px 150px 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.product__img {
+
+    height: 570px;
+    width: 640px;
+    
+}
+
+.product__img-image {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.product__decs {
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 100px;
+    gap: 20px;
+}
+
+.product__decs .btn{
+    width: 225px;
+    height: 65px;
+}
+
+.product__decs-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--co-black);
+}
+
+.product__decs-bigtitle {
+    font-size:50px;
+    font-weight:700;
+    color: var(--co-green);
+}
+
+.product__decs-prg {
+    font-size:20px;
+    font-weight:400;
+    color: var(--co-black);
+}
+
+.product__card {
+    position: absolute;
+    background-color: var(--co-white);
+    width: 290px;
+    height: 290px;
+    top: 485px;
+    left: 10px;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0, 1);
+
+}
+.product__card-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+.product__card-hr {
+    width: 50%;
+ 
+   
+    border: solid 1px var(--co-black);
+}
+.product__card-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: solid 1px var(--co-black);
+}
+.product__card-name {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.product__card-titlepr {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+}
+
+.product__card-list-wrapper {
+
+}
+
+.product__card-li {
+    padding: 10px 0 0 0;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+@media (max-width:680px) {
+    .container-product {
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+    .product__decs {
+        align-items: end;
+        margin: 180px 0 0 0;
+    }
+    .product__decs h5 {
+        align-self: start;
+    }
+    .product__img {
+        height: 290px;}
+    .product__card {
+        top: 215px;}
+}
